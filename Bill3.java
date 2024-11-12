@@ -9,6 +9,6 @@ public class Bill3 {
       String num= args[3];
       double total=  Double.parseDouble(num);
       total=Math.ceil(total/3);
-     System.out.println("Dear "+ name1 + " "+ name2 +" "+ name3 + ": pay "+ total +" Shekels each.");
+     System.out.println("Dear "+ name3 + ", "+ name2 +", "+ name1 + ": pay "+ total +" Shekels each");
 	}
 }
