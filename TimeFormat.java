@@ -41,11 +41,22 @@ public class TimeFormat {
            if (hours==24) {
                System.out.print("12:");
            }
-           System.out.println(minutes+ " PM");
+		   if (minutes<10) {
+			System.out.print("0"+minutes+"PM");
+		   }
+		   else
+		   {
+           System.out.println(minutes+ "PM");
+		   }
         }
         else
            {
-               System.out.print("0"+hours+":" + minutes+ " AM");
+			if (minutes<10) {
+				System.out.print("0"+hours+":0"+minutes+"AM");
+				
+			}
+			else
+               System.out.print("0"+hours+":" + minutes+ "AM");
            }
 	}
 }
